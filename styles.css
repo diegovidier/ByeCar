@@ -20,17 +20,23 @@ header{
         font-size: 38pt;
     }
 
+body{
+    background-color: white;
+}
+
 main {
     display: flex;
     flex-direction: row;
+    
 
 }
     main section{
-        margin-left: 150px;
+        margin-left: 10rem;
     }
 
     main section h2{
-        margin-top: 13%;
+        margin-top: 30px;
+        padding-top: 0px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 28pt;
         text-align: center;
@@ -43,6 +49,13 @@ main {
         font-weight: 800;
     }
     
+    #h2card2 {
+        padding-top: 0px;
+        margin-top: 30px;
+        margin-left: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
     #h2card2 bold{
         color: #4DBCE9;
     }
@@ -58,12 +71,91 @@ main {
         height: 55px;
     }
 
-    button{
-        margin-top: 5%;
-        margin-left: 23%;
-        width: 350px;
-        height: 80px;
-        border-radius: 15%;        
+        .seta button{
+            border: none;
+            background-color: transparent;
+        }
+
+        .seta button:hover{
+            cursor: pointer;
+        }
+    
+    
+
+    .carousel-cards li > h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 32px;
+        color: white;
+        font-weight: 700;
+        padding: 0%;
+        margin-top: 0.5rem;
+        background-color: #137298; 
+    }
+    
+    .carousel-cards li {
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #4DBCE9;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        min-width: 540px;
+        height: 540px;
+        padding: 1rem;
+        border: 1px solid white;
+        margin: 0rem;
+        overflow: hidden;
+        border-radius: 15px;        
+    }
+
+    .carousel-cards li > img {
+        max-width: 350px;    
+        margin-top: 0.5rem;  
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        background-color: #137298;        
+    }
+    
+    .carousel-cards li .card-label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        background-color: #137298; 
+    }
+
+    .carousel-cards li .card-label > h1{
+        font-size: 31px;    
+        padding: 0px;       
+        margin: 0px;
+        color: white;
+    }
+
+    
+    .carousel-cards li .card-label > span {
+        background-color: white;
+        margin: 0.5rem;
+        color: #265E70;
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .carousel-cards li .card-label > h3{
+        font-size: 18px;    
+        font-weight: 100;
+          
+    }
+
+   button{
+        margin-top: 2%;
+        margin-left: 30%;
+        margin-bottom: 3%;
+        width: 300px;
+        height: 70px;
+        border-radius: 15px;        
         border: none;
         font-size: 28pt;
         font-family: 'Inter';
@@ -71,3 +163,82 @@ main {
         color: white;
         background-color: #4DBCE9;
     }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+.modal {    
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    width: 30%;
+    height: 85%;
+    background-color: #dfdfdfe5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    border-radius: 15px;
+    
+    }
+    
+
+    .modal-card {
+        background-color: #4dbce9bf;
+        padding: 40px 100px;
+        max-width: 838px;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        color: #ffffff;
+      }
+
+     .modal-card > button img{
+        position: fixed;
+        width: 20px;
+        margin-left: 90px;
+        margin-bottom: 70px;
+       
+      }
+
+      .modal-card h1 {
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 40px;
+        color: #7c7c7c;
+      }
+      
+      .modal-card p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        color: #848484;
+      }      
+
+            
+      .modal-card > button:first-of-type {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 13px;
+        top: 13px;
+        
+      }
+      
+      .modal-card > button:last-of-type {
+        font-size: 17px;
+        font-weight: 500;
+        margin-right: 30%;
+        margin-bottom: 10%;
+        height: 35px;
+        padding: 0.5rem 2rem;
+        border-radius: 15px;
+        border: none;
+        color: #eae5e5;
+        margin-top: 0px;  
+        width: 50%;      
+      }

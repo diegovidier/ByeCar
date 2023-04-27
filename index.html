@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <title>ByeCar</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -18,30 +19,68 @@
     </header>
 
     <main>
+        <!-- ==== RIGHT-CONTENT ==== -->
         <section>
             <h2>Ter <bold> uma moto</bold> por assinatura <br>
             nunca foi tão fácil!</h2>
             <img src="assets/images/motoFinal.png">
         </section>
 
+        <!--==== LEFT-CONTENT ==== -->
         <section>
-            <h2 id="h2card2">Conheça nossas <bold> motos </bold>!</h2>
+            <h2 id="h2card2">Conheça nossas <bold>motos</bold>!</h2>
+
+            <!--==== CAROUSEL ====-->
+
             <div>
+                
                 <div class="seta">
-                    <img id="setaEsquerda" src="/assets/images/setaEsquerda.png" onclick="proximaImg()">
+                    <button onclick="show(-1)">
+                        <img id="setaEsquerda" src="/assets/images/setaEsquerda.png" onclick="proximaImg()">
+                    </button>
                 </div>
-                <div>
-                    <img id="cardCentral" src="assets/images/scooter.png">
-                </div>
+
+                <ul class="carousel-cards">
+                    
+                    <li>
+                        <h2> Scooter Elétrica Voltz EV1</h2>
+                        <img src="assets/images/scooter.png">
+                        <div class="card-label">
+                            <h1>A partir de</h1>
+                            <span>R$ 619,90</span>
+                            <h3>Plano de 30 meses</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <h2>Honda CB 500X</h2>
+                        <img src="/assets/images/hondacbx.png">
+                        <div class="card-label">
+                            <h1>A partir de</h1>
+                            <span>R$ 890,90</span>
+                            <h3>Plano de 12 meses</h3>
+                        </div>
+                    </li>
+                    
+                </ul>              
+
                 <div class="seta" >
-                    <img id="setaDireita" src="assets/images/setaDireita.png" onclick="anteriorImg()">
+                    <button onclick="show(+1)">
+                        <img id="setaDireita" src="assets/images/setaDireita.png" onclick="anteriorImg()">
+                    </button>
                 </div>
+
             </div>
 
-            <button>Saiba mais</button>
+            <button onclick="showModal()">Saiba mais</button>
+
+            <div class="modal" id="modal"></div>           
+
             
         </section>
     </main>
+
     <script src="script.js"></script>
+
 </body>
 </html>
