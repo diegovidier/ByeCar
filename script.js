@@ -14,7 +14,7 @@ const MOTO_CARD = [
 
 const cardsElements = document.querySelectorAll(".carousel-cards li");
 const modalElement = document.querySelector("#modal")
-const INTERVAL = 2000;
+const INTERVAL = 3000;
 
 let index = 0;
 

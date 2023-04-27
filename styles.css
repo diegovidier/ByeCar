@@ -79,9 +79,7 @@ main {
         .seta button:hover{
             cursor: pointer;
         }
-    
-    
-
+        
     .carousel-cards li > h2{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 32px;
@@ -89,7 +87,7 @@ main {
         font-weight: 700;
         padding: 0%;
         margin-top: 0.5rem;
-        background-color: #137298; 
+         
     }
     
     .carousel-cards li {
@@ -115,14 +113,14 @@ main {
         margin-top: 0.5rem;  
         margin-bottom: 0px;
         padding-bottom: 0px;
-        background-color: #137298;        
+        background-color: transparent;       
     }
     
     .carousel-cards li .card-label{
         display: flex;
         flex-direction: column;
         align-items: center;    
-        background-color: #137298; 
+        
     }
 
     .carousel-cards li .card-label > h1{
